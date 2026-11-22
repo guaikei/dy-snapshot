@@ -6,6 +6,11 @@ name: dy-snapshot
 description: 抖音数据快照数据源（只读）：关键词搜索、博主作品、作品详情、评论、热榜。触发：抖音搜索、热搜、评论、需求挖掘、痛点、作品详情、博主作品、对标账号、播放量、选题、舆情、竞品。小红书、快手、B站、微博、公众号不要用本技能。sec_uid、aweme_id、douyin search、douyin hot、douyin detail、douyin comments。
 license: MIT
 version: 1.5.1
+display_name: "抖音数据快照｜时点留档·涨粉回溯·版本对比·周期复盘"
+display_name_en: "Douyin Snapshot"
+description_zh: "抖音数据快照数据源（只读）：关键词搜索视频与图文、用户/达人搜索、博主作品与账号画像（limit 设 0 只取粉丝数/获赞数等互动数据）、单条作品详情、视频图文评论、实时热榜，全部以结构化 JSON 输出供 AI 直接留档分析。支持综合/最多点赞/最新排序与时间（1 天/7 天/半年）、时长、内容类型多维度筛选，可选 --save 落盘便于按期存档与同比环比回溯。不登录、不发布、不点赞、不评论。按量单次最多 10000 条；包月视频/用户搜索与作品最多 30、评论最多 50，详情与热榜无条数限制，超限返回 PLAN_LIMIT。适用于月度数据存档、涨粉曲线回溯、账号与作品版本对比、周期复盘取数、选题库沉淀、竞品档案与舆情留痕。触发词：抖音数据快照、抖音月度存档、历史数据回溯、douyin snapshot、douyin data archive。"
+description_en: "Read-only Douyin snapshot data source: keyword search for videos and image-text posts, user/creator search, creator video lists and profile stats (limit 0 returns follower/like totals only), single-video details, comments, and the real-time hot list, all as structured JSON for AI archiving and analysis. Supports relevance/most-liked/latest sorting plus time-window (1/7 days, 6 months), duration and content-type filters; optional --save keeps dated copies for month-over-month retention and follower-growth backtracking. No login, publishing, liking, or commenting. Pay-per-use runs cap at 10,000 items; monthly plans cap video/user search and creator videos at 30 and comments at 50 (details and hot list uncapped), returning PLAN_LIMIT when exceeded. Ideal for monthly data snapshots, version comparison of accounts and videos, periodic reviews, topic libraries, competitor archives, and sentiment records."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎬"
